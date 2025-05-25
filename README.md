@@ -1,6 +1,13 @@
+Parfait Esméralda, voici le **README.md complet** avec ton nom et le lien vers ton site intégrés.
+
+Tu peux **copier/coller ce fichier tel quel** dans la racine de ton projet GitHub. Il est prêt à l’emploi.
+
+---
+
+````markdown
 # US Credit Card Trends Dashboard (2012–2024)
 
-**Interactive Dashboard built with Streamlit + Plotly**  
+📊 **Interactive Dashboard built with Streamlit + Plotly**  
 Analyzing the evolution of consumer credit card behavior in the United States using data from the Federal Reserve Bank of Philadelphia.
 
 ---
@@ -20,29 +27,66 @@ The dashboard aims to help analysts, banks, or policymakers monitor:
 
 ## 📊 Data Source
 
-- [Federal Reserve Bank of Philadelphia – Credit Card Data](https://www.philadelphiafed.org/surveys-and-data/large-bank-credit-card-and-mortgage-data)
+- **Source**: [Federal Reserve Bank of Philadelphia – Credit Card Data](https://www.philadelphiafed.org/surveys-and-data/large-bank-credit-card-and-mortgage-data)
 - Dataset used: **Credit Card Balances – Q4 2024**
-- Data is **aggregated** (no personal data) and updated quarterly.
+- Type: **Aggregated data** (public, no individual-level data)
 
 ---
 
 ## ⚙️ Technologies Used
 
-| Tool         | Purpose                     |
-|--------------|-----------------------------|
-| Python       | Data preparation            |
-| Pandas       | Cleaning & preprocessing    |
-| Streamlit    | Web app interface           |
-| Plotly       | Interactive data visualizations |
-| VS Code + Jupyter | Development & analysis |
+| Tool         | Purpose                          |
+|--------------|----------------------------------|
+| Python       | Data processing                  |
+| Pandas       | Data cleaning & manipulation     |
+| Streamlit    | Dashboard development            |
+| Plotly       | Interactive visualizations       |
+| VS Code      | Development environment          |
 
 ---
 
-## 🚀 How to Run the Dashboard
+## 🚀 How to Run the Dashboard Locally
 
 1. Clone this repository  
-2. Make sure required packages are installed:
+2. Install the required packages:
 
 ```bash
 pip install streamlit pandas plotly
+````
+
+3. Launch the app:
+
+```bash
 streamlit run app/simulateur.py
+```
+
+---
+
+## 🧠 Key Insights
+
+* Total credit card balances reached **\$951B in Q4 2024**, a historical high.
+* Median credit scores remained stable around **760**.
+* Credit utilization at the 90th percentile exceeds **90%**, indicating rising risk exposure.
+* The share of minimum payments is increasing, possibly reflecting cash flow stress.
+* Delinquency rates (especially 90+ days) slightly increased from 2023 to 2024.
+
+---
+
+## 📸 Dashboard Preview
+
+![dashboard-preview](assets/dashboard-preview.png)
+
+---
+
+## 🧾 Author
+
+**Esméralda Nguetse**
+Data Analyst & Aspiring Data Scientist
+🌐 [https://faekiseki.github.io/esmeraldanguetse.github.io/](https://faekiseki.github.io/esmeraldanguetse.github.io/)
+
+---
+
+## 🪪 License
+
+This project is intended for educational and professional demonstration purposes.
+Source data © Federal Reserve Bank of Philadelphia.
