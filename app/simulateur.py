@@ -12,7 +12,7 @@ st.title("📊 U.S. Credit Trends Dashboard (2012–2024)")
 st.markdown("Built with data from the Federal Reserve Bank of Philadelphia – Aggregated quarterly credit card metrics.")
 
 # Load and clean data
-df = pd.read_csv("/mount/src/credit-scoring-federal-reserve/data/24Q4-CreditCardBalances.csv")
+df = pd.read_csv("data/24Q4-CreditCardBalances.csv")
 
 # Clean monetary and percentage values
 def clean(value):
