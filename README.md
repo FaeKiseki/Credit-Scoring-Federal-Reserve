@@ -1,10 +1,4 @@
-Parfait Esméralda, voici le **README.md complet** avec ton nom et le lien vers ton site intégrés.
 
-Tu peux **copier/coller ce fichier tel quel** dans la racine de ton projet GitHub. Il est prêt à l’emploi.
-
----
-
-````markdown
 # US Credit Card Trends Dashboard (2012–2024)
 
 📊 **Interactive Dashboard built with Streamlit + Plotly**  
@@ -52,7 +46,7 @@ The dashboard aims to help analysts, banks, or policymakers monitor:
 
 ```bash
 pip install streamlit pandas plotly
-````
+```
 
 3. Launch the app:
 
