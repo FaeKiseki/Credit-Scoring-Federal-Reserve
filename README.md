@@ -70,6 +70,7 @@ streamlit run app/simulateur.py
 
 ![dashboard-preview](assets/dashboard-preview.png)
 
+Link to the dashboard: https://credit-scoring-federal-reserve-dashboard.streamlit.app/
 ---
 
 ## 🧾 Author
