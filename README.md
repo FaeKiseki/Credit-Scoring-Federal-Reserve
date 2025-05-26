@@ -77,7 +77,7 @@ Link to the dashboard: https://credit-scoring-federal-reserve-dashboard.streamli
 
 **Esméralda Nguetse**
 Data Analyst & Aspiring Data Scientist
-🌐 [dynamic-daifuku-063eb6.netlify.app](dynamic-daifuku-063eb6.netlify.app)
+🌐 dynamic-daifuku-063eb6.netlify.app
 
 ---
 
