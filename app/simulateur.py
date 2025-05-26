@@ -175,14 +175,21 @@ with row1_col2:
     )
     fig2.update_layout(
         height=250,
-        margin=dict(l=30, r=10, t=20, b=30),
-        legend=dict(x=0, y=1, bgcolor='rgba(0,0,0,0)'),
+        margin=dict(l=30, r=10, t=40, b=30),
+        legend=dict(
+            x=0, y=-0.15, 
+            bgcolor='rgba(0,0,0,0)',
+            orientation="h",
+            font=dict(size=10)
+        ),
         xaxis_title="",
         yaxis_title="",
         plot_bgcolor='rgba(0,0,0,0)',
         paper_bgcolor='rgba(0,0,0,0)'
     )
     fig2.update_traces(line_width=2)
+    # Rename legend entries
+    fig2.for_each_trace(lambda t: t.update(name=t.name.replace("Utilization (Active Accounts Only) (", "P").replace("th percentile)", "")))
     st.plotly_chart(fig2, use_container_width=True)
 
 # Chart 3: Credit Score Trend
@@ -212,14 +219,21 @@ with row2_col1:
     )
     fig4.update_layout(
         height=250,
-        margin=dict(l=30, r=10, t=20, b=30),
-        legend=dict(x=0, y=1, bgcolor='rgba(0,0,0,0)'),
+        margin=dict(l=30, r=10, t=40, b=30),
+        legend=dict(
+            x=0, y=-0.15, 
+            bgcolor='rgba(0,0,0,0)',
+            orientation="h",
+            font=dict(size=10)
+        ),
         xaxis_title="",
         yaxis_title="",
         plot_bgcolor='rgba(0,0,0,0)',
         paper_bgcolor='rgba(0,0,0,0)'
     )
     fig4.update_traces(line_width=2)
+    # Simplify legend names
+    fig4.for_each_trace(lambda t: t.update(name=t.name.replace("+ Days Past Due Rates: Accounts Based", "+ Days")))
     st.plotly_chart(fig4, use_container_width=True)
 
 # Chart 5: Payment Behavior
@@ -233,14 +247,26 @@ with row2_col2:
     )
     fig5.update_layout(
         height=250,
-        margin=dict(l=30, r=10, t=20, b=30),
-        legend=dict(x=0, y=1, bgcolor='rgba(0,0,0,0)'),
+        margin=dict(l=30, r=10, t=40, b=30),
+        legend=dict(
+            x=0, y=-0.15, 
+            bgcolor='rgba(0,0,0,0)',
+            orientation="h",
+            font=dict(size=9)
+        ),
         xaxis_title="",
         yaxis_title="",
         plot_bgcolor='rgba(0,0,0,0)',
         paper_bgcolor='rgba(0,0,0,0)'
     )
     fig5.update_traces(line_width=2)
+    # Simplify legend names
+    legend_mapping = {
+        'Share of Accounts Making the Minimum Payment': 'Min Payment',
+        'Share of Accounts Making Greater Than the Minimum Payment but Less Than the Full Balance': 'Partial Payment',
+        'Share of Accounts Making Full Balance Payment': 'Full Payment'
+    }
+    fig5.for_each_trace(lambda t: t.update(name=legend_mapping.get(t.name, t.name)))
     st.plotly_chart(fig5, use_container_width=True)
 
 # Chart 6: Combined Health Score (custom metric)
@@ -266,8 +292,13 @@ with row2_col3:
     
     fig6.update_layout(
         height=250,
-        margin=dict(l=30, r=30, t=20, b=30),
-        legend=dict(x=0, y=1, bgcolor='rgba(0,0,0,0)'),
+        margin=dict(l=30, r=30, t=40, b=30),
+        legend=dict(
+            x=0, y=-0.15, 
+            bgcolor='rgba(0,0,0,0)',
+            orientation="h",
+            font=dict(size=10)
+        ),
         plot_bgcolor='rgba(0,0,0,0)',
         paper_bgcolor='rgba(0,0,0,0)'
     )
