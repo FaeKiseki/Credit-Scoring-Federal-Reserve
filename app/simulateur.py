@@ -1,5 +1,10 @@
 import streamlit as st import pandas as pd import plotly.express as px
 
+Load data
+
+df = pd.read_csv("data/24Q4-CreditCardBalances.csv")
+
+
 Page configuration
 
 st.set_page_config(page_title="US Credit Trends Dashboard", layout="wide")
@@ -12,9 +17,7 @@ Title
 
 st.title("\U0001F4CA U.S. Credit Trends Dashboard (2012–2024)") st.markdown("Data: Federal Reserve Bank of Philadelphia")
 
-Load data
 
-df = pd.read_csv("data/24Q4-CreditCardBalances.csv")
 
 def clean(value): if isinstance(value, str): return float(value.replace('$', '').replace('%', '').replace(',', '').strip()) return value
 
