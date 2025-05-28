@@ -66,9 +66,7 @@ streamlit run app/simulateur.py
 
 ---
 
-## 📸 Dashboard Preview
-
-![Dashboard Project 1](assets/Dashboard Project 1.jpeg)
+## 📸 Dashboard
 
 Link to the dashboard: https://credit-scoring-federal-reserve-dashboard.streamlit.app/
 ---
